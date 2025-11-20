@@ -101,24 +101,6 @@ sum(increase(kube_pod_container_status_restarts_total[10m])) by (namespace, pod)
 
 ---
 
-## 📂 Repository Structure
-
-```
-/eks-observability
-│── values-prometheus.yaml
-│── prometheus-rules.yaml
-│── cloudwatch-config.yaml
-│── service-monitor.yaml
-│── efk/
-│    ├── elasticsearch/
-│    ├── kibana/
-│    └── fluent-bit/
-│── diagrams/
-│    └── architecture.mmd
-│── README.md
-```
-
----
 
 ## 🚀 Deployment Summary
 
