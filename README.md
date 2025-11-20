@@ -83,26 +83,7 @@ Prometheus Rules → Alertmanager → Slack / Email
 Grafana ←────── Prometheus Metrics + CloudWatch Metrics
 ```
 
----
 
-# 📁 Repository Structure
-
-```
-.
-├── eks/
-│   └── cluster-config.yaml
-├── monitoring/
-│   ├── values-prometheus.yaml
-│   ├── prometheus-rules.yaml
-│   └── service-monitors/
-├── logging/
-│   ├── es-tiny.yaml
-│   ├── kibana-minimal.yaml
-│   └── fluent-bit-values.yaml
-├── dashboards/
-│   └── grafana dashboards.json
-└── README.md
-```
 
 ---
 
