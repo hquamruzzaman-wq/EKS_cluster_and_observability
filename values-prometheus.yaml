@@ -1,0 +1,12 @@
+grafana:
+  adminUser: admin
+  adminPassword: Admin12345
+  service:
+    type: LoadBalancer
+
+prometheus:
+  prometheusSpec:
+    retention: 15d
+    serviceMonitorSelector: {}
+    podMonitorSelector: {}
+    ruleSelector: {}

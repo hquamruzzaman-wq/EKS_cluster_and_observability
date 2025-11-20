@@ -1,0 +1,14 @@
+(
+  sum(
+    rate(prometheus_sd_kubernetes_http_request_total{
+      service="monitoring-kube-prometheus-prometheus",
+      status_code=~"5.."
+    }[5m])
+  )
+/
+  sum(
+    rate(prometheus_sd_kubernetes_http_request_total{
+      service="monitoring-kube-prometheus-prometheus"
+    }[5m])
+  )
+) * 100

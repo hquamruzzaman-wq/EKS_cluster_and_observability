@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cloudwatch-exporter-config
+  namespace: cloudwatch-exporter
+data:
+  config.yml: |
+    region: us-east-1
+    metrics:
+      - namespace: AWS/ELB
+        dimensions: [LoadBalancerName]
+        metrics:
+          - name: RequestCount
+          - name: Latency
