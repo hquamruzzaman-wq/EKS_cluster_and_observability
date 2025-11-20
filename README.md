@@ -24,8 +24,7 @@ This repository provides a **production‑grade EKS cluster observability system
 - **EFK Stack (Elasticsearch + Fluent Bit + Kibana)**
 - **Alerting with Alertmanager (Slack, email, PagerDuty, SNS)**
 
-Based on the steps extracted from the attached document.  
-Source: fileciteturn0file0
+
 
 ---
 
